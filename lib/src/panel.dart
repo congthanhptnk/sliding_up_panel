@@ -210,6 +210,8 @@ class SlidingUpPanel extends StatefulWidget {
 
 class _SlidingUpPanelState extends State<SlidingUpPanel> with SingleTickerProviderStateMixin {
   late AnimationController _ac;
+
+  AnimationController get ac => _ac;
   late final ScrollController _sc;
 
   bool _scrollingEnabled = false;
